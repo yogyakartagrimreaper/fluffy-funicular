@@ -3,14 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-    </ul>
+
+    <nav>
+        <div class="left">
+            <a href="/">Adi Nugroho</a>
+        </div>
+        <div class="right">
+            <a href="about.html" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>About</span>
+            </a>
+
+            <a href="gallery.html" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-image"></i>
+                <span>Gallery</span>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <div class="text">
+                <h2>Hi, saya Adi Nugroho</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae odit tenetur velit hic facilis libero itaque laudantium corporis repudiandae minus voluptatibus quis sint rem officiis quos, explicabo, iure iste. Earum libero alias soluta similique quisquam quod possimus deserunt harum deleniti nisi sequi exercitationem quaerat, odit nesciunt veritatis fuga illum reprehenderit.</p>
+                <div class="links">
+                    <a href="#skills">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+
+                    <a href="#skills">
+                        <i class="fa-solid fa-address-book"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="headshot">
+                <img src="src/image.jpeg" alt="foto profil">
+            </div>
+
+        </section>
+
+        <section id="skills" class="skills-section">
+
+            <h2>Skills</h2>
+            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsa ut ipsam, quae quas debitis quasi molestias nam. Cum earum consectetur natus voluptas molestias a. Similique quo quos in tempore.</div>
+                <div class="cells">
+                    <div class="cell">
+                        <img src="src/250px-ISO_C++_Logo.svg.png" alt="cpp logo">
+                        <span>C++</span>                        
+                    </div>
+
+                    <div class="cell">
+                        <img src="src/250px-Python-logo-notext.svg.png" alt="C logo">
+                        <span>Python</span>                        
+                    </div>
+
+                    <div class="cell">
+                        <img src="src/250px-Rust_programming_language_black_logo.svg.png" alt="rust logo">
+                        <span>Rust</span>                        
+                    </div>
+
+                    <div class="cell">
+                        <img src="src/250px-Ruby_logo.svg.png" alt="ruby logo">
+                        <span>Ruby</span>                        
+                    </div>
+                </div>
+        </section>
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+
+            <div class="group">
+                <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat fugit maiores atque architecto saepe tenetur quasi reiciendis illum sint doloremque alias inventore, asperiores maxime pariatur totam hic assumenda repudiandae, iusto quisquam nisi! Eaque doloremque perspiciatis minus voluptate dicta. A ratione autem dolor iure libero numquam voluptatem nobis laborum et corporis.</div>
+
+                <form>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email">
+
+                <label for="message">Message</label>
+                <textarea id="message" cols="30" rows="10"></textarea>
+
+                <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+        <section></section>
+    </main>
+
 </body>
 </html>
